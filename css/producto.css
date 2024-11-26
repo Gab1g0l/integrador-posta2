@@ -428,10 +428,13 @@ footer {
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         z-index: 1000;
+        display: none;
     }
 
     .nav-links.show {
         transform: translateX(0);
+        z-index: 1000;
+        display: flex;
     }
 
     .nav-links li {

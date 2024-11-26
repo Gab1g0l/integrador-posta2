@@ -163,6 +163,8 @@ footer {
 
     .nav-links.show {
         transform: translateX(0);
+        z-index: 1000;
+        display: flex;
     }
 
     .nav-links li {
