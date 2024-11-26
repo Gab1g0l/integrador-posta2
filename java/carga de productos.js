@@ -66,9 +66,6 @@ function cargarProductos() {
 function irADetalles(url) {
     window.location.href = url;
 }
-
-// Cargar productos al iniciar la página
-window.onload = cargarProductos;
 // Función para cargar productos desde el localStorage
 function cargarProductos() {
 const productGrid = document.getElementById('product-grid');
