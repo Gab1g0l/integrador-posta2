@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/producto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">La Casa del Enfoque</div>
+            <div class="hamburger" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="usuario.html">Perfil</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="https://wa.link/r8x6t5" target="_blank">Contacto</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-grid">
+        <div class="product-column">
+
+            <div class="product-card" onclick="irADetalles('detalle producto 1.html')">
+                <img src="../assets/Producto 1.png" alt="Camara Fotográfica Canon Rebel">
+                <h3>Camara Fotográfica Canon Rebel</h3>
+                <p>PRECIO: $1.382.789</p>
+            </div>
+            <button class="buy-button" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+            
+
+            <div class="product-card" onclick="irADetalles('detalle producto 2.html')">
+                <img src="../assets/producto 2.png" alt="Producto 2">
+            
+                <h3>Camara Digital Sony Zv-e10</h3>
+                <p>PRECIO: $1.899.000</p>
+                
+            </div>
+            <button class="buy-button" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+
+        </div>
+        <div class="product-column">
+            <div class="product-card" onclick="irADetalles('detalle producto 3.html')">
+                <img src="../assets/producto 3.png" alt="Producto 3">
+            
+                <h3>Camara Semireflex Sony H300</h3>
+                <p>PRECIO: $1.611.929</p>
+                
+            </div>
+            <button class="buy-button" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+
+            <div class="product-card" onclick="irADetalles('detalle producto 4.html')">
+                <div>
+                <img src="../assets/producto 4.png" alt="Producto 4">
+            </div>
+                <h3>Camara De Fotos Fotografica 35 Mm</h3>
+                <p>PRECIO: $119.000</p>
+            </div>
+            <button class="buy-button" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+
+            <div class="product-card2" onclick="irADetalles('detalle producto 5.html')">
+                <img src="../assets/producto 5.png" alt="Producto 1">
+                <h3>Cámara Fotográfica Digital Para Niños Chicos 15mp Recargable</h3>
+                <p>PRECIO: $49.490</p>
+            </div>
+            <button class="buy-button2" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+
+            <div class="product-card2" onclick="irADetalles('detalle producto 6.html')">
+                <img src="../assets/producto 6.png" alt="Producto 1">
+                <h3>Flash para estudio fotográfico</h3>
+                <p>PRECIO: $820.909</p>
+                
+            </div>
+            <button class="buy-button4" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+
+            <div class="product-card3" onclick="irADetalles('detalle producto 7.html')">
+                <img src="../assets/producto 7.png" alt="Producto 1">
+                <h3>Estudio Fotografico Con Fondo Infinito + Accesorios</h3>
+                <p>PRECIO: $695.520</p>
+                
+            </div>
+            <button class="buy-button3" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+
+            <div class="product-card3" onclick="irADetalles('detalle producto 8.html')">
+                <img src="../assets/producto 8.png" alt="Producto 1">
+                <h3>Pantalla Reflectora 5 En 1 Circular</h3>
+                <p>PRECIO: $21.642</p>
+                
+            </div>
+            <button class="buy-button5" onclick="comprarProducto('https://wa.link/r8x6t5')">Comprar</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="productos">
+            <!-- Aquí se insertará el grid de productos -->
+            <div id="product-grid2" class="product-grid2"></div>
+        </section>
+    </main>
+
+    <a href="https://wa.link/r8x6t5"><img src="../assets/Whatssap logo.png" alt="WhatsApp" class="social-media"></a>
+
+    <footer>
+        <div class="footer-links">
+            <a href="FAQ.html">Atención al clientes</a>
+            <a href="https://wa.link/r8x6t5" target="_blank">Contactanos</a>
+            <a href="FAQ.html">FAQ</a>
+           
+  
+        </div>
+    </footer>
+</body>
+    <script src="../java/producto.js"></script>
+</body>
+</html>
