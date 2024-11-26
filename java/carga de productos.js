@@ -33,8 +33,7 @@ form.addEventListener('submit', function(event) {
     const productos = JSON.parse(localStorage.getItem('productos')) || [];
 
     
-    productos.push(producto);
-
+    productos.unshift(producto);
    
     localStorage.setItem('productos', JSON.stringify(productos));
 
@@ -74,9 +73,6 @@ window.onload = cargarProductos;
 function cargarProductos() {
 const productGrid = document.getElementById('product-grid');
 const productos = JSON.parse(localStorage.getItem('productos')) || [];
-
-// Ordenar productos por precio (de menor a mayor)
-productos.sort((a, b) => a.precio - b.precio);
 
 // Limpiar el grid antes de agregar productos para evitar duplicados
 productGrid.innerHTML = '';

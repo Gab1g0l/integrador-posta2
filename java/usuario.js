@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
             mainContent.classList.remove("hidden");
         } else {
             alert("Usuario o contraseña incorrectos");
+            location.reload();
+            loginContainer.classList.remove("hidden")
+            mainContent.classList.add("hidden")
         }
     });
 
