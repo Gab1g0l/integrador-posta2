@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Productos</title>
+    <link rel="stylesheet" href="../css/carga de productos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">La Casa del Enfoque</div>
+            <div class="hamburger" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="usuario.html">Perfil</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="https://wa.link/r8x6t5" target="_blank">Contacto</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <h2>Cargar Producto</h2>
+        <form id="product-form">
+            
+            <label for="nombre-producto">Nombre del Producto:</label>
+            <input type="text" id="nombre-producto" name="nombre-producto" required>
+            
+            <label for="descripcion-producto">Descripción:</label>
+            <textarea id="descripcion-producto" name="descripcion-producto" required></textarea>
+            
+            <label for="precio-producto">Precio:</label>
+            <input type="number" id="precio-producto" name="precio-producto" required>
+
+            <label for="imagen-producto">Imagen del Producto:</label>
+            <input type="file" id="imagen-producto" name="imagen-producto" accept="image/*" required>
+
+            <button type="submit" href="producto.html">Guardar Producto</button>
+        </form>
+    </div>
+    
+    <div class="table-container">
+        <h2>Productos Cargados</h2>
+        <div id="product-grid"></div>
+    </div>
+    <a href="https://wa.link/r8x6t5"><img src="../assets/Whatssap logo.png" alt="WhatsApp" class="social-media"></a>
+
+    <footer>
+        <div class="footer-links">
+            <a href="error 404.html">Atención al clientes</a>
+            <a href="https://wa.link/r8x6t5" target="_blank">Contactanos</a>
+            <a href="FAQ.html">FAQ</a>
+           
+  
+        </div>
+    </footer>
+    <script src="../java/carga de productos.js" defer></script>
+</body>
+</html>
